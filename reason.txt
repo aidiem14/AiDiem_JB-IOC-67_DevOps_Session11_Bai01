@@ -1,0 +1,3 @@
+HTTP Code trả về: 502 Bad Gateway.
+
+Giải thích: Khi tiến trình ứng dụng ở cổng 3000 bị sập (crash), Nginx không thể kết nối tới cổng đích này và không nhận được phản hồi hợp lệ từ server phía sau (upstream server), dẫn đến việc Nginx tự động sinh ra và trả về mã lỗi 502 Bad Gateway cho người dùng cuối.
